@@ -6,14 +6,19 @@ import java.util.List;
 
 public class Q30_Reverse_Words {
 
+
     public static void main(String[] args) {
 
 //        reverse1();
 //        reverse2();
 //        reverse3();
-        reverse4();
+          reverse4();
 
-    }
+
+
+        }
+
+
 
     public static void reverse4() {
         String str = "Kemal Can Kuzu";

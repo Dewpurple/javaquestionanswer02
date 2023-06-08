@@ -7,31 +7,35 @@ public class Q28_Prime {
     20 output will be 2, 3, 5, 7, 11, 13, 17, 19
     */
 
-       getString(30);
+       getPrime(35);
 
         }
 
-
-
-    public static void getString(int num1) {
-        if (num1 <= 0) {
-            System.out.println("enter positive num");
-        }
-        String s = "";
-        int idx = 1;
-        for (int i = 2; i < num1; i++) {
-
-            if(i==2 || i==3){
-                s+=i+ " ";
-
-            }else if(i%1==0 && i%i==0 && i%2!=0 && i%3!=0){
-                s+=i+ " ";
+        public static boolean isPrime(int n) {
+            if (n <= 0) {
+                System.out.print("enter positive num");
+                return false;
             }
-//
+
+            for (int i = 2; i < n; i++) {
+                if (n % i == 0) {
+                    return false;
+                }
+
+            }
+
+            return true;
+        }
+
+    public static void getPrime(int n) {
+        for (int i = 2; i <=n ; i++) {
+            if(isPrime(i)){
+                System.out.print(i+ " ");
+            }
+        }
 
         }
-        System.out.println(s);
-    }
+
 }
 
 
