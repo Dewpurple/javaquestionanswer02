@@ -1,7 +1,5 @@
 package variables;
 
-
-
 public class Instance_variables {
 
     int instanceVariableInClass=100;

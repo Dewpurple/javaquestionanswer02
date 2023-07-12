@@ -3,7 +3,7 @@ package constructor.constructor01;
 public class MathOperation01 {
 
     int a;
-    int b=10;
+    int b=11;
     int c;
     int d;
     int f;
@@ -19,8 +19,11 @@ public class MathOperation01 {
     }
 
     public MathOperation01(int b) {
+        this.c=b;
         this.b=100;
         f=1000;
+
+
     }
 
     public MathOperation01(int c, int d) {
@@ -44,8 +47,32 @@ public class MathOperation01 {
         return c+d;
     }
 
-    public int subtraction(){
+    public int add2(){
+        return b+2;
+    }
+
+    public int subtraction00(){
         return a-2;
+    }
+
+    public int subtraction01(){
+        return c-9;
+    }
+
+    public int subtraction2(int b){
+        return b-2;
+    }
+
+    public int subtraction3(int f){
+        return f-2;
+    }
+
+    public int subtraction4(int c){
+        return c-2;
+    }
+
+    public int subtraction5(int c,int a, int f){
+        return a-c-f;
     }
 
     public int division(){
@@ -69,7 +96,7 @@ public class MathOperation01 {
 
         System.out.println("*******no parameter constructor**********");
         MathOperation01 m2=new MathOperation01();
-        System.out.println("subtraction no parameter==>" +m2.subtraction());
+        System.out.println("subtraction no parameter==>" +m2.subtraction00());
         System.out.println("m2.a = " + m2.a);
         System.out.println("m2.b = " + m2.b);
         System.out.println("m2.c = " + m2.c);
@@ -97,7 +124,13 @@ public class MathOperation01 {
         MathOperation01 m4=new MathOperation01(20);
         System.out.println("division With 20 one parameter==>" +m4.division());
         System.out.println("m4.add() = " + m4.add());
-        System.out.println("m4.subtraction() = " + m4.subtraction());
+        System.out.println("m4.add2() = " + m4.add2());
+        System.out.println("m4.subtraction00() = " + m4.subtraction00());
+        System.out.println("m4.subtraction01() = " + m4.subtraction01());
+        System.out.println("m4.subtraction2() = " + m4.subtraction2(200));
+        System.out.println("m4.subtraction3() = " + m4.subtraction3(8));
+        System.out.println("m4.subtraction4() = " + m4.subtraction4(80));
+        System.out.println("m4.subtraction5(1,2,3) = " + m4.subtraction5(11, 22, 3));
         System.out.println("m4.add1000() = " + m4.add1000());
         System.out.println("m4.a = " + m4.a);
         System.out.println("m4.b = " + m4.b);
@@ -124,7 +157,7 @@ public class MathOperation01 {
         System.out.println("m1.add()" +m1.add());
         System.out.println("m1.division()" +m1.division());
         System.out.println("m1.add() " + m1.add());
-        System.out.println("m1.subtraction()" + m1.subtraction());
+        System.out.println("m1.subtraction()" + m1.subtraction00());
         System.out.println("m1.add1000() " + m1.add1000());
 
 
